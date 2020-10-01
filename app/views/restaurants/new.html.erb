@@ -1,0 +1,10 @@
+
+<center><h1>Add a new Restaurant</h1></center>
+
+<%= form_for :restaurant do |form| %>
+  Restaurant name: <%= form.text_field :name %><br />
+  Address: <%= form.text_field :address %><br />
+  Phone number : <%= form.text_area :phone_number %><br />
+  Category    : <%= form.text_field :category %><br />
+  <%= form.submit %>
+<% end %>
